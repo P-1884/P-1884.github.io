@@ -30,6 +30,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+#about h2 {
+    text-transform: none;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
