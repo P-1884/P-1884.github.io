@@ -404,3 +404,7 @@ body {
 #cv .download-section {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6);
 }
+
+#cv .download-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/downloads-bg.jpg);
+}
