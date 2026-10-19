@@ -24,7 +24,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     text-transform: none;
-    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-family: var(--main-font);
     font-weight: 600;
     letter-spacing: 0;
 }
