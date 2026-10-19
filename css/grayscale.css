@@ -407,3 +407,13 @@ body {
 #cv .download-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/downloads-bg.jpg);
 }
+
+.profile-photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
