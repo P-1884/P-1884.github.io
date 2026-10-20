@@ -436,18 +436,36 @@ body {
     backdrop-filter: blur(4px);
 }
 
-/* On wide screens, move the boxes into the margins */
+/* On wide screens, move the boxes into the margins, with arrows */
 @media (min-width: 1200px) {
     #pub-list .pub-desc {
         position: absolute;
         top: 0;
-        width: 180px;
+        width: 150px;
         margin: 0;
     }
     #pub-list li:nth-child(odd) .pub-desc {
-        left: calc(100% + 30px);   /* right-hand margin */
+        left: calc(100% + 60px);   /* right-hand margin */
     }
     #pub-list li:nth-child(even) .pub-desc {
-        right: calc(100% + 30px);  /* left-hand margin */
+        right: calc(100% + 60px);  /* left-hand margin */
+    }
+
+    /* Hand-drawn arrow */
+    #pub-list .pub-desc::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 52px;
+        height: 30px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 30' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 24 C40 27 27 24 17 18 C12 15 8 12 5 9'/%3E%3Cpath d='M5 9 L13 9.7 M5 9 L5.7 17'/%3E%3C/svg%3E") no-repeat center / contain;
+        opacity: 0.85;
+    }
+    #pub-list li:nth-child(odd) .pub-desc::before {
+        left: -56px;                /* arrow points left, to the title */
+    }
+    #pub-list li:nth-child(even) .pub-desc::before {
+        right: -56px;
+        transform: scaleX(-1);      /* mirrored to point right */
     }
 }
