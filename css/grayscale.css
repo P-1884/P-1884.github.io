@@ -439,11 +439,11 @@ body {
 /* On wide screens, move the boxes into the margins, with arrows */
 @media (min-width: 1200px) {
     #pub-list .pub-desc {
-        position: absolute;
-        top: 0;
-        width: 150px;
-        margin: 0;
-    }
+    position: absolute;
+    top: 0;
+    width: min(260px, calc((100vw - 780px) / 2 - 80px));
+    margin: 0;
+}
     #pub-list li:nth-child(odd) .pub-desc {
         left: calc(100% + 60px);   /* right-hand margin */
     }
