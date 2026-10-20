@@ -418,3 +418,36 @@ body {
     border: 3px solid #fff;
     margin-top: 80px;
 }
+
+/* Paper description boxes */
+#pub-list li {
+    position: relative;
+}
+
+.pub-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 14px;
+    margin: -20px 0 35px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+/* On wide screens, move the boxes into the margins */
+@media (min-width: 1200px) {
+    #pub-list .pub-desc {
+        position: absolute;
+        top: 0;
+        width: 180px;
+        margin: 0;
+    }
+    #pub-list li:nth-child(odd) .pub-desc {
+        left: calc(100% + 30px);   /* right-hand margin */
+    }
+    #pub-list li:nth-child(even) .pub-desc {
+        right: calc(100% + 30px);  /* left-hand margin */
+    }
+}
