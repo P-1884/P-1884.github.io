@@ -463,7 +463,9 @@ body {
     }
     #pub-list li:nth-child(odd) .pub-desc::before {
     left: -56px;
-    transform: scaleY(-1);      /* flipped so the curve starts in the top right */
+    top: 4px;
+    transform: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 30' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 25 C45 14 32 10 5 10.5'/%3E%3Cpath d='M5 10.5 L12 6.5 M5 10.5 L12 14.5'/%3E%3C/svg%3E");
 }
     #pub-list li:nth-child(even) .pub-desc::before {
         right: -56px;
